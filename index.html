@@ -16,16 +16,32 @@
 
     <h1 class="fs-1 fw-bold text-center my-3 text-info shadow-lg p-4 rounded-3">Search Your Book</h1>
 
-
+<!-- input field for searching keyword -->
     <div class="input-group mb-3">
         <input id="inputValue" type="text" class="form-control" placeholder="Enter Your Book Name..." aria-label="Recipient's username" aria-describedby="basic-addon2">
         <button class="input-group-text" onclick="loadData()" id="basic-addon2">Search</button>
       </div>
 
-<div id="searchResult" class="col fw-bold text-danger">
-
+<!-- Showing Search Result counter-->
+<div class="d-flex">
+    <div id="searchResult" class="col fw-bold text-danger my-3">
+        
+        </div>
+    <div id="showingResult" class="col fw-bold text-danger my-3">
+   
+    </div>
+</div>
+<div id="error" class="py-3 px-5 my-2 w-50 mx-auto bg-light rounded-3 shadow-lg">
+   
 </div>
 
+<!-- spinner -->
+
+<div id="spinner" class="spinner-border m-auto" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <!-- display all books here -->
     <div id="books" class="row row-cols-1 row-cols-md-3 g-4">
         
       </div>
