@@ -73,7 +73,7 @@ const displayData = data => {
                         </h6>
                         <h6 class="card-title">
                         <span class="fw-bolder fs-6">Publisher Name: </span>
-                        <span class="fw-normal fs-6">${checkUndefined(element.publisher)}</span>
+                        <span class="fw-normal fs-6">${checkUndefined(element.publisher[0])}</span>
                         </h6>
                         <h6 class="card-title">
                         
