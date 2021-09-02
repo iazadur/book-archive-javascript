@@ -42,7 +42,7 @@ const loadData = () => {
 const displayData = data => {
 
     searchResult.innerText = `${data.numFound} Result Found`
-
+// compare with triple equal 
     if (data.numFound === 0) {
         toggleSpinner('none')
         searchResult.innerText = 'No Result Found'
@@ -50,8 +50,10 @@ const displayData = data => {
         error.innerText = 'Oops something went wrong. Please Enter a valid input'
     } else {
         let num = 0
+
+        // use ForEach loop here 
         data.docs.forEach(element => {
-            const coverPhoto = `https://covers.openlibrary.org/b/id/${element.cover_i}-L.jpg`
+            const coverPhoto = `https://covers.openlibrary.org/b/id/${element.cover_i}-M.jpg`
 
             const div = document.createElement('div')
             div.classList.add('col')
