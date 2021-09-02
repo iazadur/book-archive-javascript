@@ -41,7 +41,7 @@ const loadData = () => {
 // display book like search keyword
 const displayData = data => {
 
-    searchResult.innerText = `${data.numFound} Result Found`
+    
 // compare with triple equal 
     if (data.numFound === 0) {
         toggleSpinner('none')
@@ -49,6 +49,7 @@ const displayData = data => {
         error.style.display = 'block'
         error.innerText = 'Oops something went wrong. Please Enter a valid input'
     } else {
+        searchResult.innerText = `${data.numFound} Result Found`
         let num = 0
 
         // use ForEach loop here 
