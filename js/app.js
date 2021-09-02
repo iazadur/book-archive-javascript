@@ -72,6 +72,10 @@ const displayData = data => {
                         <span class="fw-normal fs-6">${checkUndefined(element.author_name)}</span>
                         </h6>
                         <h6 class="card-title">
+                        <span class="fw-bolder fs-6">Publisher Name: </span>
+                        <span class="fw-normal fs-6">${checkUndefined(element.publisher)}</span>
+                        </h6>
+                        <h6 class="card-title">
                         
                         <span class="fw-bolder fs-6">First Published Year: </span>
                         <span class="fw-normal fs-6">${checkUndefined(element.first_publish_year)}</span></h6>
